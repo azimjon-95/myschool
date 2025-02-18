@@ -21,11 +21,10 @@ const Home = () => {
             </div>
         );
     };
-    const navigate = useNavigate();
+
     return (
         <div className='container'>
-            {/* Render the list of items */}
-            <h1 onClick={() => navigate(+1)}>Oldinga</h1>
+
             {
                 shoppingData.map((value, index) => (
                     <Link

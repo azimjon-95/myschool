@@ -1,14 +1,13 @@
 import React from 'react';
 import './style.css';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const SinglePage = () => {
-    const navigate = useNavigate();
     const location = useLocation();
 
     return (
         <div >
-            <h1 onClick={() => navigate(-1)}>SinglePage</h1>
+            <h1>SinglePage</h1>
             <p> {location.state.meData.nomi} </p>
             <p> {location.state.meData.narxi} </p>
             <p> {location.state.meData.kategoriya} </p>
